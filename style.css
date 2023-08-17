@@ -61,6 +61,8 @@
     .flex-container {
         display: block;
         position: relative;
+        
+        
     }
 
     .procedimentos {
@@ -71,8 +73,7 @@
         height: 80px;
         border-radius: 10px;
         border: 2px solid #CDA882;
-        margin-top: 10px;
-        
+        margin-top: 10px;    
     }
 
     .valores {
