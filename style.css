@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@import url("fonts/NotoSerifDisplay-ExtraCondensed.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+:root {
+    --cor-principal: #CDA882;
+    --cor-secundaria: #D4B595;
+    --cor-background: #E3CEB9;
+    --cor-apoio: #DCC1A7;
+    --cor-base: #FAFAFA;
+    --cor-padrao: #1E1E1E;
+    --cor: #545454;
+
+    --font-destaque: "NotoSerifDisplay-ExtraCondensed";
+    --font-corpo: 'Playfair Display SC', serif;
+   
+}
+
+@media all {
+    *{
+        box-sizing: border-box;
+    }
+}
+
+/* versao mobile 360px a 813px */
+
+@media screen and (min-width: 360px) and (max-width: 812px) {
+    body{
+        background-image: url("assets/background.jpg");
+        background-size: cover;
+    }
+    
+    h2{
+        color: var(--cor-principal);
+        font-family: var(--font-corpo);
+        text-align: center;
+        font-size: 16px;
+        padding: 15px; 
+    }
+
+    main{
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        background-color: var(--cor-base);
+        width: 80vw;
+        height: 90vh;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        width: 250px;
+        height:260px;
+    }
+
+    .flex-container {
+        display: block;
+        position: relative;
+    }
+
+    .procedimentos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+        border-radius: 10px;
+        border: 2px solid #CDA882;
+        margin-top: 10px;
+        
+    }
+
+    .valores {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+        border-radius: 10px;
+        border: 2px solid #CDA882;
+        margin-top: 10px;
+    }
+
+    .agendamentos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+        border-radius: 10px;
+        border: 2px solid #CDA882;
+        margin-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+    }
+   
+}
+
+/* versao desktop 812 px a 1080px */
+
+@media screen and (min-width: 812px) and (max-width: 1950px) {
+    body{
+        background-image: url("assets/background.jpg");
+        background-size: cover;
+    }
+
+    main{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        background-color: var(--cor-base);
+        width: 80vw;
+        height: 90vh;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h2{
+        color: var(--cor-principal);
+        font-family: var(--font-corpo);
+        text-align: center;
+        font-size: 18px;
+        
+        
+    }
+
+    .logo {
+        width: 370px;
+        height:360px;
+        
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    .procedimentos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        height: 23vh;
+        border-radius: 10px;
+        border: 2px solid #CDA882;
+    }
+
+    .valores {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        height: 23vh;
+        border-radius: 10px;
+        border: 2px solid #CDA882;
+        
+    }
+
+    .agendamentos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        height: 23vh;
+        border-radius: 10px;
+        border: 2px solid #CDA882;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        
+    }
+
+}
+    
